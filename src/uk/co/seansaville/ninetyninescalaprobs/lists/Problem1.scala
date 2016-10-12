@@ -1,6 +1,4 @@
-package uk.co.seansaville.ninetyninescalaprobs
-
-import com.sun.javaws.exceptions.InvalidArgumentException
+package uk.co.seansaville.ninetyninescalaprobs.lists
 
 class Problem1 {
 
