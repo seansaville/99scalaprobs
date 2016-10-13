@@ -2,6 +2,9 @@ package uk.co.seansaville.ninetyninescalaprobs.lists
 
 import scala.annotation.tailrec
 
+/**
+  * Problem 4: Find the number of elements of a list.
+  */
 class Problem4 {
 
   def length[T](list: List[T]): Int = {

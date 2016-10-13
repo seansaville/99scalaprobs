@@ -1,5 +1,8 @@
 package uk.co.seansaville.ninetyninescalaprobs.lists
 
+/**
+  * Problem 3: Find the Kth element of a list.
+  */
 class Problem3 {
 
   def kthElement[T](k: Int, list: List[T]): T = (k, list) match {
