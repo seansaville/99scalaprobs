@@ -6,8 +6,7 @@ package uk.co.seansaville.ninetyninescalaprobs.lists
 class Problem10 {
 
   def encode[T](list: List[T]): List[(Int, T)] = {
-    val packer = new Problem9()
-    packer.pack(list).map((list: List[T]) => (list.size, list.head))
+    (new Problem9).pack(list).map((list: List[T]) => (list.size, list.head))
   }
 
 }
