@@ -1,5 +1,12 @@
-name := "99scalaprobs"
+lazy val commonSettings = Seq(
+  organization := "uk.co.seansaville",
+  scalaVersion := "2.12.0"
+)
 
-version := "1.0"
+lazy val ninetyninescalaprobs = (project in file(".")).
+  settings(commonSettings: _*).
+  settings(
+    name := "99scalaprobs"
+  )
 
-scalaVersion := "2.12.0"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.0" % "test"

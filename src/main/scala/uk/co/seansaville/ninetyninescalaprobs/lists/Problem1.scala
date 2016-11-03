@@ -3,7 +3,7 @@ package uk.co.seansaville.ninetyninescalaprobs.lists
 /**
   * Problem 1: Find the last element of a list.
   */
-class Problem1 {
+object Problem1 {
 
   def last[T](list: List[T]): T = list match {
     case h :: Nil => h
