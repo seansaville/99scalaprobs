@@ -3,7 +3,7 @@ package uk.co.seansaville.ninetyninescalaprobs.lists
 /**
   * Problem 9: Pack consecutive duplicates of list elements into sublists.
   */
-class Problem9 {
+object Problem9 {
 
   def pack[T](list: List[T]): List[List[T]] = {
     def packHelper[U](list: List[U], res: List[List[U]], pack: List[U], curr: U): List[List[U]] = {

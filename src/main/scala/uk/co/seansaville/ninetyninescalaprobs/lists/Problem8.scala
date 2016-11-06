@@ -3,7 +3,7 @@ package uk.co.seansaville.ninetyninescalaprobs.lists
 /**
   * Problem 8: Eliminate consecutive duplicates of list elements.
   */
-class Problem8 {
+object Problem8 {
 
   def compress[T](list: List[T]): List[T] = {
     def compressHelper(list: List[T], currentItem: T): List[T] = list match {
