@@ -3,7 +3,7 @@ package uk.co.seansaville.ninetyninescalaprobs.lists
 /**
   * Problem 14: Duplicate the elements of a list.
   */
-class Problem14 {
+object Problem14 {
 
   def duplicate[T](list: List[T]): List[T] = {
     def duplicateHelper[U](list: List[U], result: List[U]): List[U] = list match {

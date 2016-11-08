@@ -3,7 +3,7 @@ package uk.co.seansaville.ninetyninescalaprobs.lists
 /**
   * Problem 13: Run-length encoding of a list (direct solution).
   */
-class Problem13 {
+object Problem13 {
 
   def encodeDirect[T](list: List[T]): List[(Int, T)] = {
     def encoder(list: List[T], res: List[(Int, T)], count: Int, curr: T): List[(Int, T)] = {
