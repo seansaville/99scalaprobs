@@ -3,7 +3,7 @@ package uk.co.seansaville.ninetyninescalaprobs.lists
 /**
   * Problem 16: Drop every Nth element from a list.
   */
-class Problem16 {
+object Problem16 {
 
   def drop[T](n: Int, list: List[T]): List[T] = {
     def dropHelper[U](k: Int, n: Int, list: List[U], result: List[U]): List[U] = list match {
