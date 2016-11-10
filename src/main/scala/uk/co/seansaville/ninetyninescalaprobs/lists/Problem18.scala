@@ -3,7 +3,7 @@ package uk.co.seansaville.ninetyninescalaprobs.lists
 /**
   * Problem 18: Extract a slice from a list.
   */
-class Problem18 {
+object Problem18 {
 
   def slice[T](i: Int, k: Int, list: List[T]): List[T] = {
     def sliceHelper[U](a: Int, b: Int, ls: List[U], result: List[U]): List[U] = (a, b, ls) match {

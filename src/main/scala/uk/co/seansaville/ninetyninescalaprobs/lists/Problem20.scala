@@ -3,7 +3,7 @@ package uk.co.seansaville.ninetyninescalaprobs.lists
 /**
   * Problem 20: Remove the Kth element from a list.
   */
-class Problem20 {
+object Problem20 {
 
   def removeAt[T](k: Int, list: List[T]): (List[T], T) = {
     def removeHelper[U](k: Int, list: List[U], temp: List[U]): (List[U], U) = (k, list) match {

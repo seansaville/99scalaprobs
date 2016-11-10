@@ -3,7 +3,7 @@ package uk.co.seansaville.ninetyninescalaprobs.lists
 /**
   * Problem 19: Rotate a list N places to the left.
   */
-class Problem19 {
+object Problem19 {
 
   def rotate[T](n: Int, list: List[T]): List[T] = {
     def rotateHelper[U](n: Int, list: List[U], temp: List[U]): List[U] = (n, list) match {
@@ -13,7 +13,7 @@ class Problem19 {
     }
 
     if (n < 0)
-      rotateHelper(list.length + n, list, List())
+      rotateHelper((list.length + n) % list.length, list, List())
     else
       rotateHelper(n, list, List())
   }

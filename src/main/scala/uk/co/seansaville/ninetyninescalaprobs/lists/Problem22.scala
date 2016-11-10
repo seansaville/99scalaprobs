@@ -3,7 +3,7 @@ package uk.co.seansaville.ninetyninescalaprobs.lists
 /**
   * Problem 22: Create a list containing all integers within a given range.
   */
-class Problem22 {
+object Problem22 {
 
   def range(m: Int, n: Int): List[Int] = {
     def rangeHelper(m: Int, n: Int, result: List[Int]): List[Int] = {
@@ -12,7 +12,10 @@ class Problem22 {
       else
         (n :: result).reverse
     }
-    rangeHelper(m, n, List())
+    if (m <= n)
+      rangeHelper(m, n, List())
+    else
+      throw new IllegalArgumentException
   }
 
 }
