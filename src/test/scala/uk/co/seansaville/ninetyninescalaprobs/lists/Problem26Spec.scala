@@ -15,4 +15,8 @@ class Problem26Spec extends UnitSpec {
     assert(Problem26.combinations(3, testList).dropWhile(e => testCombs.contains(e)).isEmpty)
   }
 
+  it should "return an empty list when K > N" in {
+    assert(Problem26.combinations(10, List(1, 2)) == List())
+  }
+
 }
